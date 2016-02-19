@@ -11,7 +11,7 @@ public class ItemStack implements SimpleStack {
 
     Queue<Item> queue;
 
-    public void ItemStack(){
+    public  ItemStack(){
         queue = new ArrayDeque<Item>();
     }
     @Override
@@ -26,16 +26,17 @@ public class ItemStack implements SimpleStack {
 
     @Override
     public void push(Item item) {
-
+        queue.add(item);
     }
 
     @Override
     public Item peek() throws EmptyStackException {
-        return null;
+
+        return queue.peek();
     }
 
     @Override
     public Item pop() throws EmptyStackException {
-        return null;
+        return queue.poll();
     }
 }

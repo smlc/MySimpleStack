@@ -1,6 +1,5 @@
 package dcll.msie;
 
-import dcll.msie.SimpleStack;
 
 
 /**
@@ -11,7 +10,9 @@ public class Item  {
     private String nom;
     private int id;
 
-    public void Item(String nom,int id){
+
+
+    public Item(String nom,int id){
        this.nom = nom;
         this.id = id;
     }
