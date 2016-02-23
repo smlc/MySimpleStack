@@ -37,7 +37,7 @@ public class ItemStackTest {
         //When
         itemStatck.push(item);
 
-        //Then
+        //Then.
         assertEquals(1,itemStatck.getSize());
     }
 
