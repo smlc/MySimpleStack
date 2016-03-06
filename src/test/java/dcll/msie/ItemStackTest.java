@@ -1,6 +1,7 @@
 package dcll.msie;
 
 import org.junit.Test;
+import static org.mockito.Mockito.*;
 import dcll.msie.Item;
 
 import static org.junit.Assert.*;
@@ -15,6 +16,14 @@ public class ItemStackTest {
     public void testIsEmpty() throws Exception {
         //Given
         ItemStack item = new ItemStack();
+
+        //Mock Creation
+        SimpleStack mockStack = mock(SimpleStack.class);
+
+
+
+        //Stubbing (Etablie le comportement de l'objet)
+        when(mockStack.isEmpty()).thenReturn(true);
 
         //When et Then
         assertTrue(item.isEmpty());

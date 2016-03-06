@@ -29,6 +29,10 @@ public class ItemStack implements SimpleStack {
         queue.add(item);
     }
 
+    /**
+     * @return
+     * @throws EmptyStackException
+     */
     @Override
     public Item peek() throws EmptyStackException {
 
